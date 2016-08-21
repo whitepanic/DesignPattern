@@ -7,8 +7,8 @@ public class BookShelf implements Aggregate{
 	public BookShelf(int maxsize) {
 		this.books = new Book[maxsize];
 	}
-	public Book getBookAt(int inx){
-		return books[inx];
+	public Book getBookAt(int idx){
+		return books[idx];
 	}
 	public void appendBook(Book book){
 		this.books[last] = book;
